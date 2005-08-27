@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,wheel) %{_bindir}/*
-%attr(755,root,wheel) %{_libdir}/X11/x11perfcomp/*.sh
+%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_libdir}/X11/x11perfcomp/*.sh
 %{_mandir}/man1/*.1*
