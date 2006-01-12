@@ -1,12 +1,12 @@
 Summary:	x11perf application
 Summary(pl):	Aplikacja x11perf
 Name:		xorg-app-x11perf
-Version:	0.99.2
+Version:	1.0.1
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/app/x11perf-%{version}.tar.bz2
-# Source0-md5:	fc21c7698b27b5672e457e92fafce975
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/x11perf-%{version}.tar.bz2
+# Source0-md5:	d13b4eb920b0f51dc538c34d1b3afbce
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc COPYING ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %dir %{_libdir}/X11/x11perfcomp
 %attr(755,root,root) %{_libdir}/X11/x11perfcomp/*
