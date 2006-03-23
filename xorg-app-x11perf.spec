@@ -1,18 +1,21 @@
 Summary:	x11perf application
 Summary(pl):	Aplikacja x11perf
 Name:		xorg-app-x11perf
-Version:	1.0.1
+Version:	1.4.1
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/x11perf-%{version}.tar.bz2
-# Source0-md5:	d13b4eb920b0f51dc538c34d1b3afbce
+Source0:	http://xorg.freedesktop.org/releases/individual/app/x11perf-%{version}.tar.bz2
+# Source0-md5:	fd06c8b8e3572a0e14af65a49e0dd7d1
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 # just xmuu
 BuildRequires:	xorg-lib-libXmu-devel
+BuildRequires:	xorg-lib-libXext-devel
+BuildRequires:	xorg-lib-libXft-devel
+BuildRequires:	xorg-lib-libXrender-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
