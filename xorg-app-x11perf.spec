@@ -2,7 +2,7 @@ Summary:	x11perf application
 Summary(pl):	Aplikacja x11perf
 Name:		xorg-app-x11perf
 Version:	1.4.1
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/x11perf-%{version}.tar.bz2
@@ -49,7 +49,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/x11perf
+%attr(755,root,root) %{_bindir}/x11perfcomp
 %dir %{_libdir}/X11/x11perfcomp
 %attr(755,root,root) %{_libdir}/X11/x11perfcomp/*
-%{_mandir}/man1/*.1x*
+%{_mandir}/man1/Xmark.1x*
+%{_mandir}/man1/x11perf.1x*
+%{_mandir}/man1/x11perfcomp.1x*
