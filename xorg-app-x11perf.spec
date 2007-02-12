@@ -1,5 +1,5 @@
 Summary:	x11perf application
-Summary(pl.UTF-8):   Aplikacja x11perf
+Summary(pl.UTF-8):	Aplikacja x11perf
 Name:		xorg-app-x11perf
 Version:	1.4.1
 Release:	1
