@@ -1,5 +1,5 @@
-Summary:	x11perf application
-Summary(pl.UTF-8):	Aplikacja x11perf
+Summary:	x11perf application - X11 server performance test program
+Summary(pl.UTF-8):	Aplikacja x11perf do testowania wydajności serwera X11
 Name:		xorg-app-x11perf
 Version:	1.4.1
 Release:	1
@@ -20,10 +20,12 @@ BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-x11perf application.
+The x11perf program runs one or more performance tests and reports how
+fast an X server can execute the tests.
 
 %description -l pl.UTF-8
-Aplikacja x11perf.
+Program x11perf uruchamia jeden lub więcej testów wydajnościowych i
+informuje jak szybko serwer X jest w stanie wykonać te testy.
 
 %prep
 %setup -q -n x11perf-%{version}
