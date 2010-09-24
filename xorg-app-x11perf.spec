@@ -1,14 +1,14 @@
 Summary:	x11perf application - X11 server performance test program
 Summary(pl.UTF-8):	Aplikacja x11perf do testowania wydajności serwera X11
 Name:		xorg-app-x11perf
-Version:	1.5.1
+Version:	1.5.2
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/x11perf-%{version}.tar.bz2
-# Source0-md5:	66e4aa4645f83809071eb69553ed0222
+# Source0-md5:	3459958a7fdccf02fa43b70fda9cd87f
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libXext-devel
@@ -16,7 +16,7 @@ BuildRequires:	xorg-lib-libXft-devel
 # just xmuu
 BuildRequires:	xorg-lib-libXmu-devel
 BuildRequires:	xorg-lib-libXrender-devel
-BuildRequires:	xorg-util-util-macros >= 1.3
+BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
