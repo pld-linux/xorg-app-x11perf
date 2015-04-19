@@ -1,21 +1,23 @@
 Summary:	x11perf application - X11 server performance test program
 Summary(pl.UTF-8):	Aplikacja x11perf do testowania wydajności serwera X11
 Name:		xorg-app-x11perf
-Version:	1.5.4
+Version:	1.6.0
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/x11perf-%{version}.tar.bz2
-# Source0-md5:	5c3c7431a38775caaea6051312a49bc9
+# Source0-md5:	f0b24e4d8beb622a419e8431e1c03cd7
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
+BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXext-devel
 BuildRequires:	xorg-lib-libXft-devel
 # just xmuu
 BuildRequires:	xorg-lib-libXmu-devel
 BuildRequires:	xorg-lib-libXrender-devel
+BuildRequires:	xorg-proto-xproto-devel >= 7.0.17
 BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -55,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/x11perfcomp
 %dir %{_libdir}/X11/x11perfcomp
 %attr(755,root,root) %{_libdir}/X11/x11perfcomp/*
-%{_mandir}/man1/Xmark.1x*
-%{_mandir}/man1/x11perf.1x*
-%{_mandir}/man1/x11perfcomp.1x*
+%{_mandir}/man1/Xmark.1*
+%{_mandir}/man1/x11perf.1*
+%{_mandir}/man1/x11perfcomp.1*
